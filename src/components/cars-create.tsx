@@ -6,7 +6,7 @@ import {carsValidator} from "../validator/carsValidator.tsx";
 import {postCars} from "../services/api.service.tsx";
 
 export const CarsCreateComponent =()=>{
-    const {register,handleSubmit, formState:{errors}}
+    const {register,handleSubmit, formState:{errors, }}
         = useForm<ICar>({mode:'all',resolver:joiResolver(carsValidator)})
 
     const createHandler =(data:ICar)=>{

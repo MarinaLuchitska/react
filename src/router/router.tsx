@@ -9,7 +9,6 @@ export const routes = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {index:true, element: <Navigate to="/users?page=1" replace /> },
-
             {
                 path: "users",
                 element: <PaginationLayout />,
